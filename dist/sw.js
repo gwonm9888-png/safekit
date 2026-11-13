@@ -1,4 +1,4 @@
-const CACHE_NAME='safekit-shell-v4';
+const CACHE_NAME='safekit-shell-v5';
 const SHELL=['./','./index.html','./offline.html','./faq.html','./sources.html','./privacy.html','./terms.html','./affiliate.html','./manifest.webmanifest','./robots.txt','./sitemap.xml','./favicon.ico','./icon-192.png','./icon-512.png','./icon-192.svg','./icon-512.svg','./og-image.png','./style.css','./safety-hub.css','./video-affiliate.css','./catalog.css','./tiers.css','./policy.css','./app.js','./safety-core.js','./scenario-manuals.js','./safety-hub.js','./guide-video.js','./affiliate.js','./share.js','./pwa.js'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('safekit-shell-')&&key!==CACHE_NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
