@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://safekit-ready-kr-261112.suretern6.chatgpt.site/sitemap.xml
