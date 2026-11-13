@@ -36,7 +36,7 @@
     {name:'멸균 거즈·붕대 세트',category:'구급·위생',description:'규격과 사용법을 확인하고 청결하게 보관',query:'멸균 거즈 압박붕대 응급'},
     {name:'일회용 니트릴 장갑',category:'구급·위생',description:'가족에게 맞는 사이즈와 알레르기 여부 확인',query:'일회용 니트릴 장갑'},
     {name:'물티슈·손 소독제',category:'구급·위생',description:'피부 사용 가능 여부와 유통기한 확인',query:'대형 물티슈 손 소독제'},
-    {name:'비상 배변용품',category:'구급·위생',description:'휴대용 변기와 배변봉투·응고제 구성 확인',query:'휴대용 비상변기 응고제 배변봉투'},
+    {name:'비상 배변봉투·응고제',category:'구급·위생',description:'휴대용 변기와 배변봉투·응고제 구성 확인',query:'비상 배변봉투 응고제 휴대용 변기'},
     {name:'비상 보온포·담요',category:'보온·대피',description:'젖지 않게 보관하고 가족 인원만큼 준비',query:'비상 보온포 담요'},
     {name:'우비·판초',category:'보온·대피',description:'양손을 쓸 수 있는 형태와 크기를 확인',query:'비상 우비 판초 방수'},
     {name:'튼튼한 운동화·여벌 양말',category:'보온·대피',description:'평소 발에 맞는 신발을 대피용으로 준비',query:'트레킹 운동화 방수 양말'},
@@ -62,7 +62,7 @@
   const filters=document.querySelector('.filters');
   const categories=['전체',...new Set(products.map(p=>p.category))];
   filters.innerHTML=categories.map((c,i)=>`<button class="${i===0?'active':''}" data-filter="${esc(c)}">${esc(c)}</button>`).join('');
-  filters.onclick=e=>{const b=e.target.closest('[data-filter]');if(!b)return;filters.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));root.querySelectorAll('.product').forEach(card=>card.hidden=b.dataset.filter!=='전체'&&card.dataset.category!==b.dataset.filter)};
+  const selectCategory=category=>{const b=[...filters.querySelectorAll('[data-filter]')].find(x=>x.dataset.filter===category);if(!b)return;filters.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));root.querySelectorAll('.product').forEach(card=>card.hidden=category!=='전체'&&card.dataset.category!==category)};filters.onclick=e=>{const b=e.target.closest('[data-filter]');if(b)selectCategory(b.dataset.filter)};document.querySelector('#safetyHub')?.addEventListener('click',e=>{const link=e.target.closest('[data-tier-category]');if(!link)return;e.preventDefault();selectCategory(link.dataset.tierCategory);location.hash='shop';});
   const check=document.querySelector('#checklist');
   if(check){
     const essential=[
