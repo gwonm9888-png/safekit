@@ -6,7 +6,15 @@
     '트윅스 미니스':'https://link.coupang.com/a/iDCEXJpSa4',
     '엠앤엠즈 밀크 펀사이즈':'https://link.coupang.com/a/iDCIXpdkk0',
     '발열도시락 전투식량 세트':'https://link.coupang.com/a/iDCM5iSGC4',
-    '희망건빵 프로틴 간식':'https://link.coupang.com/a/iDCOFMUl88'
+    '희망건빵 프로틴 간식':'https://link.coupang.com/a/iDCOFMUl88',
+    '풀무원샘물 무라벨 생수 2L 6개':'https://link.coupang.com/a/iDGkMUJJuu',
+    '아쿠아시스 무라벨 생수 2L 12개':'https://link.coupang.com/a/iDGq53lrB6',
+    'RCIR 프랑스 전투식량 200g':'https://link.coupang.com/a/iDGvXoHSIC',
+    '당돌 소변 응고제와 40L 봉투 20장':'https://link.coupang.com/a/iDGzztA40i',
+    '응가맨 응고제 10개와 용변봉투 10개':'https://link.coupang.com/a/iDGBPi8K6K',
+    'AA 건전지 포함 방수 미니 손전등':'https://link.coupang.com/a/iDGGaQ2GFo',
+    '에너자이저 X-FOCUS AA 손전등':'https://link.coupang.com/a/iDGI8LUfqS',
+    '네이쳐리빙 2단 약보관함':'https://link.coupang.com/a/iDG3382zts'
   };
   const essentialNames=new Set(['생수','장기보관 비상식량','즉석식품·발열도시락','손전등·헤드랜턴','라디오·보조배터리','구급 파우치','위생·비상 화장실','비상 배낭']);
   const products=[
@@ -16,6 +24,14 @@
     {name:'엠앤엠즈 밀크 펀사이즈',category:'식량·식수',description:'나누어 먹기 좋은 미니 초콜릿',query:'엠앤엠즈 밀크 펀사이즈 230g'},
     {name:'발열도시락 전투식량 세트',category:'식량·식수',description:'물과 불 사용을 줄여 먹을 수 있는 발열식 구성',query:'발열도시락 전투식량 비빔밥 라면밥 세트'},
     {name:'희망건빵 프로틴 간식',category:'식량·식수',description:'실온 보관용 건빵 간식',query:'희망건빵 프로틴 건빵 비상식량'},
+    {name:'풀무원샘물 무라벨 생수 2L 6개',category:'식량·식수',description:'2L 생수 6개. 확인 가격은 와우 회원가이며 가격과 배송 조건은 변경될 수 있어요.',query:'풀무원샘물 무라벨 생수 2L 6개',tier:'S',price:'3,920원 · 와우 회원가',shipping:'무료배송 확인',checkedAt:'2026-11-13',image:'https://thumbnail13.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/626531978334235-866cc122-8a4d-4d6c-b299-1a6862f36ee9.jpg',originalUrl:'https://www.coupang.com/vp/products/6239512369?itemId=27515749836'},
+    {name:'아쿠아시스 무라벨 생수 2L 12개',category:'식량·식수',description:'2L 생수 12개. 확인 가격은 와우 할인 표시가이며 가격과 배송 조건은 변경될 수 있어요.',query:'아쿠아시스 무라벨 생수 2L 12개',tier:'S',price:'5,630원 · 와우 할인 표시가',shipping:'무료배송 확인',checkedAt:'2026-11-13',image:'https://thumbnail1.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/74510331583477-646fbf19-5958-429d-9565-895a4fed4086.jpg',originalUrl:'https://www.coupang.com/vp/products/8773906801?itemId=25531248615'},
+    {name:'RCIR 프랑스 전투식량 200g',category:'식량·식수',description:'1개, 200g. 상품 5,500원에 배송비 3,000원이 추가돼요. 장기 보관 기간은 상품 상세에서 확인하세요.',query:'RCIR 프랑스 전투식량',tier:'S',price:'5,500원',shipping:'배송비 3,000원 · 합계 8,500원',checkedAt:'2026-11-13',image:'https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/d11c/c8ebcaabf51f07a292a3d199ba848bd1c287530177a120a3f5d9c057b5c6.jpg',originalUrl:'https://www.coupang.com/vp/products/6186175208?itemId=25186236222'},
+    {name:'당돌 소변 응고제와 40L 봉투 20장',category:'구급·위생',description:'응고티슈와 검정 40L 봉투 20장. 상품 2,200원에 배송비 3,000원이 추가돼요.',query:'당돌 캠핑용 소변 응고제',tier:'S',price:'2,200원',shipping:'배송비 3,000원 · 합계 5,200원',checkedAt:'2026-11-13',image:'https://t2a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/advertiser/1757298702764/9a40b8bc-8936-4e37-baf1-da1deeebc84c.jpg',originalUrl:'https://www.coupang.com/vp/products/8508860234?itemId=15052554752'},
+    {name:'응가맨 응고제 10개와 용변봉투 10개',category:'구급·위생',description:'소변·대변용 응고제 10개와 용변봉투 10개. 상품 12,200원에 배송비 3,000원이 추가돼요.',query:'응가맨 캠핑 휴대용 변기 응고제 10개',tier:'S',price:'12,200원',shipping:'배송비 3,000원 · 합계 15,200원',checkedAt:'2026-11-13',image:'https://thumbnail15.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/a1d1/059888acf1086b0091a9cb283598cfd2b815b20a671b9786b349b6a3bf17.jpg',originalUrl:'https://www.coupang.com/vp/products/4952328377?itemId=8541967465'},
+    {name:'AA 건전지 포함 방수 미니 손전등',category:'조명',description:'AA 건전지 포함, 방수형 미니 랜턴. 상품 3,500원에 배송비 3,000원이 추가돼요.',query:'LED 미니 손전등 AA건전지 포함',tier:'S',price:'3,500원',shipping:'배송비 3,000원 · 합계 6,500원',checkedAt:'2026-11-13',image:'https://t3a.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/image_audit/prod/6d827d3a-f12a-446a-9ee0-41bf17a36372_fixing_v2.png',originalUrl:'https://www.coupang.com/vp/products/1758232235?itemId=2994464065'},
+    {name:'에너자이저 X-FOCUS AA 손전등',category:'조명',description:'AA 건전지식 에너자이저 손전등. 상품 8,800원에 배송비 3,000원이 추가돼요.',query:'에너자이저 LED X-FOCUS LIGHT XFH21',tier:'S',price:'8,800원',shipping:'배송비 3,000원 · 합계 11,800원',checkedAt:'2026-11-13',image:'https://t3c.coupangcdn.com/thumbnails/remote/212x212ex/image/vendor_inventory/2455/2c5b03421295174908f725215f611f20550783b4aa223dc9a4c6b67cec81.jpg',originalUrl:'https://www.coupang.com/vp/products/72925035?itemId=13413795951'},
+    {name:'네이쳐리빙 2단 약보관함',category:'구급·위생',description:'구급용품은 별도 구매가 필요한 빈 약보관함이에요. 상품가 11,900원, 쿠폰 적용 시 9,520원 표시(와우 기준).',query:'네이쳐리빙 2단 다용도 칸막이 약보관함',tier:'A',price:'11,900원 · 쿠폰 적용 표시 9,520원',shipping:'무료배송 확인 · 와우 쿠폰 기준',checkedAt:'2026-11-13',image:'https://thumbnail6.coupangcdn.com/thumbnails/remote/212x212ex/image/retail/images/4421822275956103-abe40d88-2d69-49ec-9e41-bd2f0eaadd68.jpg',originalUrl:'https://www.coupang.com/vp/products/8129311787?itemId=23083651966'},
     {name:'생수',category:'식량·식수',description:'가정용 비축과 휴대용으로 용량을 나눠 준비',query:'생수 2L 6개'},
     {name:'장기보관 비상식량',category:'식량·식수',description:'보관 기간과 조리 방법을 확인해 선택',query:'장기보관 비상식량 세트'},
     {name:'즉석식품·발열도시락',category:'식량·식수',description:'물을 적게 쓰거나 바로 먹을 수 있는 식품',query:'발열도시락 즉석식품 비상식량'},
@@ -57,7 +73,7 @@
   root.innerHTML=products.map((p,i)=>{
     const partner=affiliateLinks[p.name];
     const url=partner||'https://www.coupang.com/np/search?q='+encodeURIComponent(p.query);
-    return `<article class="product${essentialNames.has(p.name)?' essential-product':''}" data-category="${esc(p.category)}"><a class="catalog-card-link${partner?' partner-product-link':''}" href="${url}" target="_blank" rel="${partner?'sponsored ':''}noopener noreferrer" ${partner?'referrerpolicy="no-referrer"':''} aria-label="${esc(p.name)} ${partner?'쿠팡 상품 보기':'쿠팡에서 검색'}"><div class="catalog-visual" aria-hidden="true"><span>${partner?'파트너스 상품':'필수 준비 후보'}</span><b>${['🥫','🍫','🍱','🥤','💧','🔦','🏮','📻','🔋','🩹','🧼','🛏️','🧥','🎒','🪖','🧯','👶','🐾'][i%18]}</b><small>${esc(p.category)}</small></div><div class="product-category">${esc(p.category)}${essentialNames.has(p.name)?' · 필수 기본 키트':''}</div><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p><span class="catalog-cta">${partner?'상품 사진으로 쿠팡에서 보기 ↗':'쿠팡에서 상품 찾기 ↗'}</span></a></article>`;
+    return `<article class="product${essentialNames.has(p.name)?' essential-product':''}" data-category="${esc(p.category)}"><a class="catalog-card-link${partner?' partner-product-link':''}" href="${url}" target="_blank" rel="${partner?'sponsored ':''}noopener noreferrer" ${partner?'referrerpolicy="no-referrer"':''} aria-label="${esc(p.name)} ${partner?'쿠팡 상품 보기':'쿠팡에서 검색'}"><div class="catalog-visual" aria-hidden="true">${p.image?`<img src="${esc(p.image)}" alt="" loading="lazy"><span>파트너스 상품</span>`:`<span>필수 준비 후보</span><b>${['🥫','🍫','🍱','🥤','💧','🔦','🏮','📻','🔋','🩹','🧼','🛏️','🧥','🎒','🪖','🧯','👶','🐾'][i%18]}</b>`}<small>${esc(p.category)}</small></div><div class="product-category">${esc(p.category)}${essentialNames.has(p.name)?' · 필수 기본 키트':''}${p.tier?`<span class="tier-badge">${esc(p.tier)} 티어 · 준비 우선순위</span>`:''}</div><h3>${esc(p.name)}</h3><p>${esc(p.description)}</p>${p.price?`<div class="catalog-price">확인 가격 ${esc(p.price)}</div><div class="catalog-shipping">${esc(p.shipping)} · ${esc(p.checkedAt)}</div>`:''}<span class="catalog-cta">${partner?'사진을 눌러 쿠팡에서 보기 ↗':'쿠팡에서 상품 찾기 ↗'}</span></a>${p.originalUrl?`<a class="original-product-link" href="${esc(p.originalUrl)}" target="_blank" rel="noopener noreferrer">원본 상품 상세 ↗</a>`:''}</article>`;
   }).join('');
   const filters=document.querySelector('.filters');
   const categories=['전체',...new Set(products.map(p=>p.category))];
